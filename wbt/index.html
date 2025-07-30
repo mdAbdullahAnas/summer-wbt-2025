@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Md. Abdullah Anas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  
+<body>
+
+<!-- Main container: Left (image), Right (everything else) -->
+<div class="main-container">
+    
+    <!-- Sidebar with image -->
+    <nav id="SideDesign">
+        <div class="profile-img-wrapper">
+            <a href="#" onclick="setActive(this); loadContent('html/Home.html')">
+                <img src="image/AnasImg.jpeg" alt="Profile Picture" class="profile-img">
+            </a>
+        </div>
+
+        <div class="profile-info">
+                <h2><strong>Md. Abdullah Anas</strong></h2>
+                <p>Software engineer <br> Founder, Misty Industry</p>
+            </div>
+    </nav>
+
+    <!-- Right content -->
+    <div class="right-content">
+        <!-- Top Navigation Bar -->
+        <nav id="UpDesign">
+            <div class="links">
+                <a href="#" onclick="setActive(this); loadContent('html/Education.html')">Education</a>
+                <a href="#" onclick="setActive(this); loadContent('html/Experience.html')">Experience</a>
+                <a href="#" onclick="setActive(this); loadContent('html/Project.html')">Project</a>
+                <a href="#" onclick="setActive(this); loadContent('html/ContactMe.html')">Form</a>
+                <a href="#" onclick="setActive(this); loadContent('html/Cv.html')">CV</a>
+            </div>
+
+            
+        </nav>
+
+        <!-- Main Content Area -->
+        <div id="content">
+            <h2>Welcome</h2>
+             
+         </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-contact2">
+                 <strong>Contact</strong><br>
+                <span>📞 01984298833</span><br>
+
+            </div>
+            <div class="footer-contact">
+               
+
+                <a href="https://github.com/mdAbdullahAnas" target="_blank">
+                    <img src="/wbt/image/linkGithubimg.jpeg" alt="GitHub" class="MediaLink">
+                </a>
+
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <img src="/wbt/image/linkLinkedInImg.png" alt="LinkedIn" class="MediaLink">
+                </a>
+
+                <a href="https://www.facebook.com/md.abdullah.anas.330728" target="_blank">
+                    <img src="/wbt/image/linkFbImg.png" alt="Facebook" class="MediaLink">
+                </a>
+
+                <a href="mailto:abdullahanas100200305@gmail.com" class="email-link">
+                    <img src="/wbt/image/linkGmailImg.jpg" alt="Gmail" class="MediaLink">
+                </a>
+            </div>
+
+            
+        </footer>
+    </div>  
+
+</div> <!-- end main-container -->
+
+<script>
+    function setActive(link) {
+        const links = document.querySelectorAll(".links a");
+        links.forEach(a => a.classList.remove("active"));
+        link.classList.add("active");
+    }
+
+    function loadContent(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("content").innerHTML = html;
+            })
+            .catch(() => {
+                document.getElementById("content").innerHTML = "<p>Failed to load content.</p>";
+            });
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px;
+    color: #333;
+    line-height: 1.6;
+}
+
+ 
+
+.box {
+    background-color: white;
+    border: 1.5px solid #007bff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sidePic {
+    flex: 0 0 120px;
+}
+
+.institution {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.box p {
+    flex: 1;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.box ul {
+    flex: 1;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sidePic {
+        margin-bottom: 15px;
+    }
+}

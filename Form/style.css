@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.donation-form {
+  background-color: #fff;
+  padding: 20px 30px;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+h2 {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.steps {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.form-group.full {
+  display: block;
+  margin-top: 12px;
+}
+
+.form-group label {
+  width: 200px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  flex: 1;
+  padding: 5px;
+  max-width: 250px;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.inline-radio label {
+  margin-right: 15px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-right: 10px;
+}
+
+.secure {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #555;
+}

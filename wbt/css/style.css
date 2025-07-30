@@ -1,0 +1,220 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #8bbcf0, #5c5555);
+    color: #363636;
+    line-height: 1.6;
+}
+
+/* New wrapper */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Sidebar */
+#SideDesign {
+    background-color: #e2caca;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* center horizontally */
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    justify-content: flex-start; /* move content to top */
+}
+
+.profile-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 160px;
+    height: 260px;
+    /* border-radius removed */
+    cursor: pointer;
+    transition: transform 0.2s;
+    object-fit: cover; /* keep aspect ratio and fill space */
+}
+
+.profile-img:hover {
+    transform: scale(1.25);
+}
+
+
+
+
+/* Right side */
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top navigation */
+#UpDesign {
+    background-color: #f8f8f8;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Profile Info Text */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Navigation links */
+ 
+
+
+ 
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-bottom: 20px;
+}
+
+.profile-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align image to the left */
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile-img:hover {
+    transform: scale(1.25);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Navigation links */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.links a:hover,
+.links a.active {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+/* Main content wrapper */
+#content {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+
+ 
+/* Education Section Styling */
+section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px 30px; /* match UpDesign's 30px side padding */
+    margin: 20px 0;     /* no auto-centering */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;        /* use full space */
+    flex-wrap: wrap;
+    box-sizing: border-box; /* ensures padding doesn’t overflow */
+}
+
+
+.sidePic {
+    flex-shrink: 0;
+}
+
+.sidePic img.institution {
+    width: 30vw;    
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidePic img.projectPic {
+    width: 40vw;    
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+section p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #cac5c5;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-contact {
+    margin-top: 10px;
+}
+ 
+
+.MediaLink {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    vertical-align: middle;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.MediaLink:hover {
+    transform: scale(1.9);
+    border-color: #000;
+}
+

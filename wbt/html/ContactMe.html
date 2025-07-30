@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" type="text/css" href="../wbt/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../wbt/css/form.css">
+</head>
+
+<body>
+    <div class="form-section">
+        <h2>To Contact Me, Please Provide Your Information</h2>
+
+        <form action="#" method="post">
+            <!-- Name Fields -->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" required>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Language Radio Buttons -->
+            <p><strong>Preferred Language:</strong></p>
+            <span class="radio-group">
+                <input type="radio" id="bangla" name="language" value="Bangla" required>
+                <label for="bangla">Bangla</label>
+
+                <input type="radio" id="english" name="language" value="English">
+                <label for="english">English</label>
+            </span>
+
+            <!-- Project Checklist -->
+            <p><strong>Projects:</strong></p>
+            <div class="checkbox-group">
+               
+                <label><input type="checkbox" name="project" value="Tic Tac Toe Game"> Tic Tac Toe Game</label>
+                 <label><input type="checkbox" name="project" value="Cgpa Calculator"> Cgpa Calculator</label>
+                <label><input type="checkbox" name="project" value="matching Game"> Matching Game</label>
+            </div>
+
+            <!-- Hobbies Checklist -->
+            <p><strong>Hobbies:</strong></p>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="hobby" value="Reading Books"> Reading Books</label>
+                <label><input type="checkbox" name="hobby" value="Browsing Net"> Browsing the Internet</label>
+                <label><input type="checkbox" name="hobby" value="Learning AI Tools"> Learning AI Tools</label>
+            </div>
+
+            <!-- Buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
