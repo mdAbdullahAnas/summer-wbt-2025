@@ -17,6 +17,9 @@ function askReasonForContact() {
 
         alert(output);
     } else if (reason === "2") {
+
+        let hobbyChoice = prompt("Which hobby(s)?\n1. Reading Books\n2. Browsing the Internet\n3. Learning AI tools\n(You can type numbers like 1,2)");
+        let output = "You selected hobbys(s): ";
         if (hobbyChoice.includes("1")) {
             output += "Reading Books ";
         }
