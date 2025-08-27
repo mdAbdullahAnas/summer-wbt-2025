@@ -1,6 +1,6 @@
 <?php
-$length = 10;  
-$width = 5;   
+$length = 20;  
+$width = 15;   
 
 $area = $length * $width;
 $perimeter = 2 * ($length + $width);
