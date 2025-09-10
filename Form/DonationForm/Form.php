@@ -54,6 +54,13 @@ if (empty($values["lastName"])) {
         $errors["zipCode"] = "Must be a number.";
     }
   }
+  if (empty($values["memZip"])) {
+    $errors["memZip"] = "Zip Code is required";
+   } elseif (!empty($values["memZip"])) {
+    if (!is_numeric($values["memZip"])) {
+        $errors["memZip"] = "Must be a number.";
+    }
+  }
 
 
     if (empty($values["country"])) $errors["country"] = "Country is required";
@@ -243,7 +250,7 @@ function showError($field, $errors) {
 
 <div class="form-group full">
     <button type="reset">Reset</button>
-    <button type="submit">Continue</button>
+    <button type="submit">Submit</button>
 </div>
 
 </form>
